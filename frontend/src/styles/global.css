@@ -1,0 +1,198 @@
+:root {
+  --bg: #0f1115;
+  --panel: #151821;
+  --text: #e6e6eb;
+  --muted: #9aa0aa;
+  --border: #242836;
+  --accent: #6b7cff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+}
+.app {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.auth {
+  margin-top: 80px;
+}
+
+.auth h1 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.auth form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth input {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 10px;
+  color: var(--text);
+  border-radius: 6px;
+}
+
+.auth button {
+  background: var(--accent);
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  color: white;
+}
+
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  color: var(--muted);
+}
+
+button.google {
+  background: transparent;
+  border: 1px solid var(--border);
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.top button {
+  background: none;
+  border: none;
+  color: var(--muted);
+}
+
+.new-note {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.new-note input,
+.new-note textarea {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 10px;
+  color: var(--text);
+  border-radius: 6px;
+}
+
+.new-note textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.new-note button {
+  align-self: flex-start;
+  background: var(--accent);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.notes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notes-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.notes-list span {
+  cursor: pointer;
+}
+
+.notes-list button {
+  background: none;
+  border: none;
+  color: var(--muted);
+}
+.back {
+  background: none;
+  border: none;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.content {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+.note-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.note-title {
+  cursor: pointer;
+}
+
+.note-title:hover {
+  text-decoration: underline;
+}
+
+.note-delete {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.navbar h1 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.logout {
+  background: none;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  color: var(--muted);
+}
+
+.logout:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
